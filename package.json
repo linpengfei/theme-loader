@@ -1,0 +1,31 @@
+{
+  "name": "theme-loader",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "debugger": "node --inspect-brk=5858 ./node_modules/.bin/webpack",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.7.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^4.0.0-beta.8",
+    "loader-utils": "^1.2.3",
+    "mini-css-extract-plugin": "^0.8.0",
+    "postcss-clean": "^1.1.0",
+    "postcss-less": "^3.1.4",
+    "postcss-less-engine": "^0.6.2",
+    "postcss-less-engine-latest": "^1.0.1",
+    "schema-utils": "^2.5.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9"
+  },
+  "devDependencies": {
+    "css-loader": "^3.2.0",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "postcss": "^7.0.18",
+    "style-loader": "^1.0.0"
+  }
+}
