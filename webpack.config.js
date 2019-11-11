@@ -1,7 +1,8 @@
-let path = require('path');
-let ThemePlugin = require("./plugin/thema.plugin");
-let HtmlWebpackPlugin = require("html-webpack-plugin");
-let MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const path = require('path');
+const ThemePlugin = require("./plugin/thema.plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
     mode: 'development',
     entry: './src/index.js',
@@ -42,6 +43,7 @@ module.exports = {
     plugins: [
         new ThemePlugin({ themeFile: path.resolve(__dirname, "src/thema.less")}),
         new HtmlWebpackPlugin(),
-        new MiniCssExtractPlugin({ filename: 'index.css'})
+        new MiniCssExtractPlugin({ filename: 'index.css'}),
+        new CleanWebpackPlugin()
     ]
 }

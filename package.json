@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "autoprefixer": "^9.7.1",
+    "clean-webpack-plugin": "^3.0.0",
     "extract-text-webpack-plugin": "^3.0.2",
     "html-webpack-plugin": "^4.0.0-beta.8",
     "loader-utils": "^1.2.3",

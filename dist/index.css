@@ -1,25 +1,24 @@
-/***THEMECSSBEGIN**.wa {
-    background-color: #fff;
-}
+/**THEMECSSBEGIN**
+@c: @base-color+1;
 body {
-    background: #fff;
+  @d: @base-color;
+  background: @d;
+  .dd {
+  }
 }
-body .dd .ee {
-    backdrop-filter: blur(1px);
-}**THEMECSSEND**/
+**THEMECSSEND**/
 .wa {
-  background-color: #fff;
+  background-color: #354;
 }
 body {
-  background: #fff;
+  width: 500px;
+  height: 300px;
+  background: #354;
 }
 body .dd .ee {
   backdrop-filter: blur(1px);
 }
 
-/***THEMECSSBEGIN**.aaa {
-    display: inline;
-}**THEMECSSEND**/
 .aaa {
   display: inline;
 }
