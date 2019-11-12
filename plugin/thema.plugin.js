@@ -1,4 +1,5 @@
 let path = require('path');
+let fs = require('fs');
 let validate = require('schema-utils');
 let schema = require("./optionSchema.json");
 let postcss = require('postcss');
@@ -59,7 +60,9 @@ class ThemePlugin {
             }
             if(themeContent.length) {
                   // 设置名称为 fileName 的输出资源
-                  const fileContent = themeContent.join('');
+                  const themeFileContent = fs.readFileSync(this.options.themeFile, { encoding: 'utf-8'}).toString();
+                  themeContent.unshift(themeFileContent);
+                  const fileContent = themeContent.join('\r\n');
   compilation.assets['theme.less'] = {
     // 返回文件内容
     source: () => {
