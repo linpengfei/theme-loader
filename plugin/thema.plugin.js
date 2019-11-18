@@ -39,7 +39,7 @@ class ThemePlugin {
             htmlWebpackPlugin.getHooks(compilation).alterAssetTagGroups.tapAsync('themePlugin', (data,cb) => {
                 const { headTags } = data;
                 headTags.push(createHtmlTagObject('link', { rel: "stylesheet/less",  href: "theme.less", type:"text/css" }));
-                headTags.push(createHtmlTagObject('script', { src: "https://cdnjs.cloudflare.com/ajax/libs/less.js/3.10.3/less.js" }));
+                headTags.push(createHtmlTagObject('script', { type: "text/javascript" }, 'console.log(123)'));
                 cb(null, data);
             });
         });
