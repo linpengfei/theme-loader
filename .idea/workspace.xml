@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33341d6b-bd15-491b-a1d8-07b4bf118250" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="33341d6b-bd15-491b-a1d8-07b4bf118250" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/theme.less" beforeDir="false" afterPath="$PROJECT_DIR$/dist/theme.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/thema.plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/thema.plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.less" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1SbPHlkgRE158Fn5UwKkHUaFwhz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/node_modules/webpack/bin/webpack.js" />
@@ -24,22 +38,36 @@
     <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
     <property name="ts.external.directory.path" value="D:\WebStorm 2018.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.debugger">
     <configuration name="webpack" type="NodeJSConfigurationType" path-to-js-file="node_modules/webpack/bin/webpack.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="debugger" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="debugger" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.debugger" />
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -53,13 +81,91 @@
       <updated>1571829237341</updated>
       <workItem from="1571829241532" duration="103000" />
       <workItem from="1571829382523" duration="8561000" />
+      <workItem from="1585662813874" duration="111000" />
+      <workItem from="1585662941284" duration="2518000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="WindowStateProjectService">
+    <state width="2517" height="478" key="GridCell.Tab.0.bottom" timestamp="1585664485087">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="478" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1585664485087" />
+    <state width="2517" height="478" key="GridCell.Tab.0.center" timestamp="1585664485086">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="478" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1585664485086" />
+    <state width="2517" height="478" key="GridCell.Tab.0.left" timestamp="1585664485086">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="478" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1585664485086" />
+    <state width="2517" height="478" key="GridCell.Tab.0.right" timestamp="1585664485087">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="478" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1585664485087" />
+    <state width="2517" height="478" key="GridCell.Tab.1.bottom" timestamp="1585664505896">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="478" key="GridCell.Tab.1.bottom/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1585664505896" />
+    <state width="2517" height="478" key="GridCell.Tab.1.center" timestamp="1585664505896">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="478" key="GridCell.Tab.1.center/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1585664505896" />
+    <state width="2517" height="478" key="GridCell.Tab.1.left" timestamp="1585664505896">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="478" key="GridCell.Tab.1.left/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1585664505895" />
+    <state width="2517" height="478" key="GridCell.Tab.1.right" timestamp="1585664505896">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="478" key="GridCell.Tab.1.right/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1585664505896" />
+    <state width="2517" height="478" key="GridCell.Tab.2.bottom" timestamp="1585664508111">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="478" key="GridCell.Tab.2.bottom/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1585664508111" />
+    <state width="2517" height="478" key="GridCell.Tab.2.center" timestamp="1585664508111">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="478" key="GridCell.Tab.2.center/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1585664508111" />
+    <state width="2517" height="478" key="GridCell.Tab.2.left" timestamp="1585664508111">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="478" key="GridCell.Tab.2.left/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1585664508111" />
+    <state width="2517" height="478" key="GridCell.Tab.2.right" timestamp="1585664508111">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="478" key="GridCell.Tab.2.right/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1585664508111" />
+    <state width="2517" height="478" key="GridCell.Tab.3.bottom" timestamp="1585664506932">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="478" key="GridCell.Tab.3.bottom/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1585664506932" />
+    <state width="2517" height="478" key="GridCell.Tab.3.center" timestamp="1585664506932">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="478" key="GridCell.Tab.3.center/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1585664506932" />
+    <state width="2517" height="478" key="GridCell.Tab.3.left" timestamp="1585664506932">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="478" key="GridCell.Tab.3.left/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1585664506932" />
+    <state width="2517" height="478" key="GridCell.Tab.3.right" timestamp="1585664506932">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="478" key="GridCell.Tab.3.right/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1585664506932" />
+  </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/plugin/thema.plugin.js</url>
+          <line>40</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="NodeJSConfigurationType">
         <watch expression="rule" language="JavaScript" />

@@ -1,9 +1,9 @@
 let path = require('path');
-let fs = require('fs');
 let validate = require('schema-utils');
 let schema = require("./optionSchema.json");
 let postcss = require('postcss');
 let htmlWebpackPlugin = require('html-webpack-plugin');
+let fs = require('fs');
 const contentReg = /\/\*\*THEMECSSBEGIN\*\*\n([\s\S]+)\n\*\*THEMECSSEND\*\*\//;
 const themeContent = [];
 class ThemePlugin {
@@ -39,7 +39,6 @@ class ThemePlugin {
             htmlWebpackPlugin.getHooks(compilation).alterAssetTagGroups.tapAsync('themePlugin', (data,cb) => {
                 const { headTags } = data;
                 headTags.push(createHtmlTagObject('link', { rel: "stylesheet/less",  href: "theme.less", type:"text/css" }));
-                headTags.push(createHtmlTagObject('script', { type: "text/javascript" }, 'console.log(123)'));
                 cb(null, data);
             });
         });
@@ -59,6 +58,8 @@ class ThemePlugin {
                 }
             }
             if(themeContent.length) {
+              themeContent.unshift('\r\n');
+              themeContent.unshift(fs.readFileSync(this.options.themeFile));
                   // 设置名称为 fileName 的输出资源
                   const themeFileContent = fs.readFileSync(this.options.themeFile, { encoding: 'utf-8'}).toString();
                   themeContent.unshift(themeFileContent);
