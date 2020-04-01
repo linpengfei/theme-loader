@@ -1,8 +1,10 @@
 const path = require('path');
-const ThemePlugin = require("./plugin/thema.plugin");
+const ThemePlugin = require("./plugin/theme.plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const lessVal = require('./src/theme');
+console.log(lessVal);
 module.exports = {
     mode: 'development',
     entry: './src/index.js',
@@ -29,10 +31,15 @@ module.exports = {
                 },
                 {
                     loader: 'less-loader',
+                    options: {
+                      globalVars: lessVal,
+                      modifyVars: lessVal
+                  }
                 },
                 {
                     loader: ThemePlugin.loader,
                     options: {
+                      globalVars: lessVal,
                         themeFile: path.resolve(__dirname, "src/thema.less")
                     },
                 }
@@ -41,7 +48,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new ThemePlugin({ themeFile: path.resolve(__dirname, "src/thema.less")}),
+        new ThemePlugin({ globalVars: lessVal, themeFile: path.resolve(__dirname, "src/thema.less")}),
         new HtmlWebpackPlugin(),
         new MiniCssExtractPlugin({ filename: 'index.css'}),
         new CleanWebpackPlugin()

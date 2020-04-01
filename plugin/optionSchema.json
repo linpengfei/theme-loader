@@ -1,9 +1,9 @@
 {
     "type": "object",
     "properties": {
-        "themeFile": {
-            "description": "this is theme base variable file path",
-            "type": "string"
+        "lessVal": {
+            "description": "this is theme base variable object",
+            "type": "object"
         }
     }
 }

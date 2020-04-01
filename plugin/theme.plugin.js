@@ -4,13 +4,13 @@ let schema = require("./optionSchema.json");
 let postcss = require('postcss');
 let htmlWebpackPlugin = require('html-webpack-plugin');
 let fs = require('fs');
+const { ConcatSource } = require("webpack-sources");
 const contentReg = /\/\*\*THEMECSSBEGIN\*\*\n([\s\S]+)\n\*\*THEMECSSEND\*\*\//;
 const themeContent = [];
 class ThemePlugin {
     constructor(options = {}) {
         validate(options, schema);
         this.options = options;
-        console.log('init:', this.options);
     }
     apply(compiler) {
         const { createHtmlTagObject } = htmlWebpackPlugin;
@@ -49,20 +49,23 @@ class ThemePlugin {
                 if(key.endsWith('.css')) {
                     console.log('key:', key);
                     console.log(assets[key].source());
+                    console.log(assets);
                     const source = assets[key].source();
                     const ret = contentReg.exec(source);
                     if(ret) {
                         console.log(ret[1]);
                         themeContent.push(ret[1]);
+                        console.log('path:', compilation.getPath(key))
+                        compilation.updateAsset(key, old => new ConcatSource(assets[key].source().replace(contentReg, '')) )
                     }
                 }
             }
             if(themeContent.length) {
-              themeContent.unshift('\r\n');
-              themeContent.unshift(fs.readFileSync(this.options.themeFile));
+              let val = Object.keys(this.options.globalVars).map(key => `${key}:${this.options.globalVars[key]};`);
+              themeContent.unshift(val.join('\r\n'));
                   // 设置名称为 fileName 的输出资源
-                  const themeFileContent = fs.readFileSync(this.options.themeFile, { encoding: 'utf-8'}).toString();
-                  themeContent.unshift(themeFileContent);
+                  // const themeFileContent = fs.readFileSync(this.options.themeFile, { encoding: 'utf-8'}).toString();
+                  // themeContent.unshift(themeFileContent);
                   const fileContent = themeContent.join('\r\n');
   compilation.assets['theme.less'] = {
     // 返回文件内容

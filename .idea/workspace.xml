@@ -4,15 +4,26 @@
     <list default="true" id="33341d6b-bd15-491b-a1d8-07b4bf118250" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/theme.less" beforeDir="false" afterPath="$PROJECT_DIR$/dist/theme.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/loader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/optionSchema.json" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/optionSchema.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/thema.plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/theme.plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -84,7 +95,7 @@
       <workItem from="1571829382523" duration="8561000" />
       <workItem from="1585662813874" duration="111000" />
       <workItem from="1585662941284" duration="2518000" />
-      <workItem from="1585707264223" duration="1091000" />
+      <workItem from="1585707264223" duration="11628000" />
     </task>
     <servers />
   </component>
@@ -92,25 +103,25 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1860" height="249" key="GridCell.Tab.0.bottom" timestamp="1585708357768">
+    <state width="1860" height="249" key="GridCell.Tab.0.bottom" timestamp="1585728597546">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="249" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1600.900@0.0.1920.1040" timestamp="1585708357768" />
+    <state width="1860" height="249" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1600.900@0.0.1920.1040" timestamp="1585728597546" />
     <state width="2517" height="478" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1585664485087" />
-    <state width="1860" height="249" key="GridCell.Tab.0.center" timestamp="1585708357768">
+    <state width="1860" height="249" key="GridCell.Tab.0.center" timestamp="1585728597545">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="249" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1600.900@0.0.1920.1040" timestamp="1585708357768" />
+    <state width="1860" height="249" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1600.900@0.0.1920.1040" timestamp="1585728597545" />
     <state width="2517" height="478" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1585664485086" />
-    <state width="1860" height="249" key="GridCell.Tab.0.left" timestamp="1585708357767">
+    <state width="1860" height="249" key="GridCell.Tab.0.left" timestamp="1585728597545">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="249" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1600.900@0.0.1920.1040" timestamp="1585708357767" />
+    <state width="1860" height="249" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1600.900@0.0.1920.1040" timestamp="1585728597545" />
     <state width="2517" height="478" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1585664485086" />
-    <state width="1860" height="249" key="GridCell.Tab.0.right" timestamp="1585708357768">
+    <state width="1860" height="249" key="GridCell.Tab.0.right" timestamp="1585728597546">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="249" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1600.900@0.0.1920.1040" timestamp="1585708357768" />
+    <state width="1860" height="249" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1600.900@0.0.1920.1040" timestamp="1585728597546" />
     <state width="2517" height="478" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1585664485087" />
     <state width="2517" height="478" key="GridCell.Tab.1.bottom" timestamp="1585664505896">
       <screen x="0" y="0" width="2560" height="1400" />
@@ -162,15 +173,6 @@
     <state width="2517" height="478" key="GridCell.Tab.3.right/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1585664506932" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/plugin/thema.plugin.js</url>
-          <line>40</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="NodeJSConfigurationType">
         <watch expression="rule" language="JavaScript" />
