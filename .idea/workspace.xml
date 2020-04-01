@@ -6,8 +6,8 @@
       <change beforePath="$PROJECT_DIR$/dist/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/theme.less" beforeDir="false" afterPath="$PROJECT_DIR$/dist/theme.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin/thema.plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/thema.plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +24,9 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/node_modules/webpack/bin/webpack.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -38,7 +39,7 @@
     <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
     <property name="ts.external.directory.path" value="D:\WebStorm 2018.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
-  <component name="RunManager" selected="npm.debugger">
+  <component name="RunManager" selected="npm.build">
     <configuration name="webpack" type="NodeJSConfigurationType" path-to-js-file="node_modules/webpack/bin/webpack.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
@@ -64,8 +65,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.debugger" />
         <item itemvalue="npm.build" />
+        <item itemvalue="npm.debugger" />
       </list>
     </recent_temporary>
   </component>
@@ -83,6 +84,7 @@
       <workItem from="1571829382523" duration="8561000" />
       <workItem from="1585662813874" duration="111000" />
       <workItem from="1585662941284" duration="2518000" />
+      <workItem from="1585707264223" duration="1091000" />
     </task>
     <servers />
   </component>
@@ -90,21 +92,25 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2517" height="478" key="GridCell.Tab.0.bottom" timestamp="1585664485087">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1860" height="249" key="GridCell.Tab.0.bottom" timestamp="1585708357768">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1860" height="249" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1600.900@0.0.1920.1040" timestamp="1585708357768" />
     <state width="2517" height="478" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1585664485087" />
-    <state width="2517" height="478" key="GridCell.Tab.0.center" timestamp="1585664485086">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1860" height="249" key="GridCell.Tab.0.center" timestamp="1585708357768">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1860" height="249" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1600.900@0.0.1920.1040" timestamp="1585708357768" />
     <state width="2517" height="478" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1585664485086" />
-    <state width="2517" height="478" key="GridCell.Tab.0.left" timestamp="1585664485086">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1860" height="249" key="GridCell.Tab.0.left" timestamp="1585708357767">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1860" height="249" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1600.900@0.0.1920.1040" timestamp="1585708357767" />
     <state width="2517" height="478" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1585664485086" />
-    <state width="2517" height="478" key="GridCell.Tab.0.right" timestamp="1585664485087">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1860" height="249" key="GridCell.Tab.0.right" timestamp="1585708357768">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1860" height="249" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1600.900@0.0.1920.1040" timestamp="1585708357768" />
     <state width="2517" height="478" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1585664485087" />
     <state width="2517" height="478" key="GridCell.Tab.1.bottom" timestamp="1585664505896">
       <screen x="0" y="0" width="2560" height="1400" />
@@ -161,7 +167,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/plugin/thema.plugin.js</url>
           <line>40</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
