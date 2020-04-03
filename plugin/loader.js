@@ -17,6 +17,7 @@ function themeLoader(source) {
   Object.keys(globalVars).forEach(key => {
     globalVarsSet.add(key);
   });
+  console.log(this.resourcePath);
   const callback = this.async();
   postcss().process(source, { syntax: syntax }).then(result => {
     const root = result.root;
@@ -30,19 +31,16 @@ function themeLoader(source) {
         comment.parent.removeChild(comment);
       });
       root.walkRules(rule => {
-        console.log('rule:', rule);
+        console.log('ruleselector:', rule.selector);
         if (rule.nodes.length === 0) {
           let parent = rule.parent;
           rule.parent.removeChild(rule);
           // 删除全部空树将会导致缺少一个分号
           while(parent) {
             if(parent.nodes.length === 0) {
-              if (parent.parent) {
-                parent.parent.removeChild(parent);
-              } else {
-                parent.remove();
-              }
+              const temp = parent;
               parent = parent.parent;
+              temp.remove();
             } else {
               break;
             }
@@ -63,7 +61,8 @@ function deleteEmpty(item) {
   console.log('deleteEmpty:', item, item.type);
   if(item.nodes && item.nodes.lenght) {
     item.nodes.forEach(deleteEmpty)
-  } else {
+  }
+  if(item.nodes && item.nodes.lenght === 0) {
     item.remove();
   }
 }
@@ -104,6 +103,7 @@ function dealDecl(rule, atRuleName) {
       remove = false;
     }
   });
+  console.log(remove);
   if (remove || prop.startsWith('//')) {
     rule.remove();
   }

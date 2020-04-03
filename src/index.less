@@ -18,13 +18,14 @@ body {
 @bbb: '#waa';
 @head-bg-color: white;
 @font-color: black;
-@base-bg-color: '#fff';
+@base-bg-color: @base-color;
 html,
 body,
 #root {
   height: 100%;
   //min-height: 797px;
   min-width: 1440px;
+  background: @base-color;
 }
 .ant-layout {
   height: 100%;
@@ -62,11 +63,33 @@ body,
     }
   }
   >.ant-layout-sider {
-    background-color: @base-bg-color;
+    background-color: #fff;
     >.ant-layout-sider-children {
       >.ant-menu {
-        background-color: @base-bg-color;
+        background-color: #fff;
       }
+    }
+  }
+}
+@tab-prefix-cls: ant-table;
+@tabs-title-font-size: 14px;
+@tabs-title-font-size-lg: 16px;
+@tabs-title-font-size-sm: 12px;
+.@{tab-prefix-cls} {
+
+  &-nav-container {
+    font-size: @tabs-title-font-size;
+  }
+
+  .@{tab-prefix-cls}-large-bar {
+    .@{tab-prefix-cls}-nav-container {
+      font-size: @tabs-title-font-size-lg;
+    }
+  }
+
+  .@{tab-prefix-cls}-small-bar {
+    .@{tab-prefix-cls}-nav-container {
+      font-size: @tabs-title-font-size-sm;
     }
   }
 }
